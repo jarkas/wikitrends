@@ -1,5 +1,6 @@
 body { 
-    font-family: Neuton;
+    /* font-family: Neuton; */
+    font-family: Tahoma,Verdana,Helvetica,Arial,sans-serif;
     font-size: 14pt;
 }
 
@@ -12,6 +13,7 @@ header {
 
 div#content {
     margin-top: 15px;
+    direction:rtl;
 }
 
 table#articles {
@@ -42,7 +44,7 @@ th.views {
 }
 
 th.article {
-    text-align: left;
+    text-align: right;
 }
 
 th.social {
@@ -52,14 +54,17 @@ th.social {
 
 td.rank {
     text-align:right;
+    font-size: 10pt;
 }
 
 td.prevRank {
     text-align: right;
+    font-size: 10pt;
 }
 
 td.views {
     text-align: right;
+    font-size: 10pt;
 }
 
 table#articles td {
@@ -84,7 +89,7 @@ div#articleSummary {
     padding: 10pt;
     width: 270px;
     opacity: 1;
-    font-size: 12pt;
+    font-size: 8pt;
 }
 
 div#articleSummary a {
@@ -100,7 +105,7 @@ footer {
     margin-top: 20px;
     margin-bottom: 40px;
     display: block;
-    font-size: 14pt;
+    font-size: 8pt;
     text-align: center;
 }
 
