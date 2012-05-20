@@ -37,8 +37,8 @@ mkdir -p $json_dir
 
 curl --silent $url | \
     gunzip -c | \
-    egrep '^en ' | \
+    egrep '^ar ' | \
     perl -ne '@cols=split/ /; print "$cols[2] $cols[1]\n";' | \
     sort -rn | \
-    head -n 1000 | \
+    head -n 80 | \
     ./jsonify.py > $json_file 
