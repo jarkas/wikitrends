@@ -37,6 +37,7 @@ mkdir -p $json_dir
 
 curl --silent $url | \
     gunzip -c | \
+    awk  '{if(!/^ar[cz]/)print;else exit}' | \
     egrep '^ar ' | \
     perl -ne '@cols=split/ /; print "$cols[2] $cols[1]\n";' | \
     sort -rn | \
